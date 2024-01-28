@@ -101,17 +101,14 @@ function playButton(button_num){
 function checkCards(){
     if(lastPress === buttons[buttonIndex]){
         if(buttonIndex === (buttons.length - 1)){
-            console.log("restart");
             buttonIndex = -1;
             setTimeout(function(){
-                console.log("wait 2 sec");
                 selectButton();
             },1000);
 
         }
         else{
             buttonIndex++;
-            console.log("true");
         }
     }
     else{
